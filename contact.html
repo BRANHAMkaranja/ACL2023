@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>CESDA - Contact</title>
+  <title>CESDA - Contact Us</title>
   <meta content="TRY AND REACH US FOR ANY HELP" name="description">
   <meta content="Contact, cesda" name="keywords">
 
@@ -29,6 +29,14 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <!-- STYLES -->
+	<link rel="stylesheet" href="assets2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets2/css/flexslider.css">
+	<link rel="stylesheet" href="assets2/css/animsition.min.css">
+	<link rel="stylesheet" href="assets2/css/style.css">
+	<link rel="stylesheet" href="assets2/css/owl.carousel.css">
+	<link rel="stylesheet" href="assets2/css/owl.theme.css">
+
 </head>
 
 <body>
@@ -38,21 +46,33 @@
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
       <a href="index.php" class="logo d-flex align-items-center">
-        <img src="assets/img/cesdalogo.jpg" class="rounded-circle " alt="logo">
-        <h1 class="font-monospace">CESDA</h1>
+        <img src="assets/img/Logo E.png" class="" alt="logo">
+        <h1 class="font-monospace"></h1>
       </a>
 
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="scrollto" href="index.php#hero">Home</a></li>
-          <li><a class="scrollto" href="aboutus.php">About Us</a></li>
-          <li><a class="scrollto" href="index.php#service">What we do</a></li>
-          <li><a class="scrollto" href="index.php#features">Features</a></li>
-          <li><a class="scrollto" href="index.php#faq">FAQs</a></li>
-          <li><a href="contact.php active">Contact Us</a></li>
-          <li><a class="get-a-quote" href="donatenow.php">Donate</a></li>
+          <li><a class="scrollto" href="index.html">HOME</a></li>
+          <li><a class="scrollto" href="aboutus.html">ABOUT US</a></li>
+          
+          <li><a class="scrollto" href="media.html">MEDIA</a></li>
+          <li><a class="scrollto" href="team.html">OUR TEAM</a></li>
+
+
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">MENU <i class=""></i></a>
+             <ul class="dropdown-menu" role="menu">
+               <li><a class="scrollto" href="#service">WHATE WE DO</a></li>
+               <li><a class="scrollto" href="#features">FEATURES</a></li>
+               <li><a class="scrollto" href="#faq">FAQs</a></li>
+              
+              </ul>
+          </li>
+          
+          <li><a href="contact.html">CONTACT US</a></li>
+         
         </ul>
       </nav><!-- .navbar -->
 
@@ -76,7 +96,7 @@
       <nav>
         <div class="container">
           <ol>
-            <li><a style="color: #034707;" href="index.php">Home</a></li>
+            <li><a style="color: #034707;" href="index.html">Home</a></li>
             <li>Contact Us</li>
           </ol>
         </div>
@@ -90,61 +110,91 @@
         <div>
           <iframe style="border:0; width: 100%; height: 340px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4743.547479529663!2d36.813787588807074!3d-1.2739821799677984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f172e2b30a483%3A0x24eee4c08364a0f3!2sNational%20Museum%20of%20Kenya!5e0!3m2!1sen!2ske!4v1687116534324!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div><!-- End Google Maps -->
+          <!-- HERO SECTION  -->
+	
 
-        <div class="row gy-4 mt-4">
+	<section class="contact_brick">
+		<div class="container mt-100">
+			<div class="row center">
+				<div class="col-md-8 col-md-offset-2 col-sm-12">
+					<div class="section-title">
+						<h2 class="mb-50">GET IN TOUCH WITH US</h2>
+						<p class="module-subtitle">#.</p>
+					</div>
+				</div>
+			</div>
+            <div class="row mt-100">
+                    <!--location-->
+                    <div class="col-md-4 col-sm-4 text-center wow slideInLeft">
+                        <div class="detail">
+                            <i class="lnr lnr-map-marker"></i>
+                            <h4><span>You can find us at</span></h4>
+                            <h3>Our Location</h3>
+                                <p>
+                                    KENYATTA UNIVERSITY,MAIN CAMPUS <br>
+                                    NAIROBI KENYA
+                                </p>
+                        </div>
+                    </div>
+                    <!--end location-->
 
-          <div class="col-lg-4">
+                    <!--contact info-->
+                    <div class="col-md-4 col-sm-4 text-center wow slideInUp">
+                        <div class="detail">
+                            <i class="lnr lnr-phone"></i>
+                            <h4><span>Our mail and phone</span></h4>
+                            <h3>Contacts</h3>
+                            <p>
+                                <abbr title="Email">E:</abbr> mail@mail.com
+                                <br>
+                                <abbr title="Phone">P:</abbr> 123-456-7890
+                            </p>
+                        </div>
+                    </div>
+                    <!--end contact info-->
 
-            <div class="info-item d-flex">
-              <i class="bi bi-geo-alt flex-shrink-0"></i>
-              <div>
-                <h4>Location:</h4>
-                <p>Nairobi, Kenya</p>
-              </div>
-            </div><!-- End Info Item -->
-
-            <div class="info-item d-flex">
-              <i class="bi bi-envelope flex-shrink-0"></i>
-              <div>
-                <h4>Email:</h4>
-                <p>@gmail.com</p>
-              </div>
-            </div><!-- End Info Item -->
-
-            <div class="info-item d-flex">
-              <i class="bi bi-phone flex-shrink-0"></i>
-              <div>
-                <h4>Call:</h4>
-                <p>+254700 000 000</p>
-              </div>
-            </div><!-- End Info Item -->
-
-          </div>
-
-          <div class="col-lg-8">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                    <!--contact info-->
+                    <div class="col-md-4 col-sm-4 text-center wow slideInRight">
+                        <div class="detail">
+                            <i class="lnr lnr-clock"></i>
+                            <h4><span>We work on the following</span></h4>
+                            <h3>Schedule</h3>
+                            <p>
+                                M-F: 8 AM - 4 PM<br>
+                                Sa: 8 AM - 12 PM<br>
+                                Su: Closed
+                            </p>
+                        </div>
+                    </div>
+                    <!--end contact info-->
                 </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+            <!-- CONTACT FORM -->
+            <div class="contact-form bottom">
+                <form id="main-contact-form" name="contact-form" method="post" action="sendemail.php">
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="form-group">
+                        <input type="text" name="name" id="name" class="form-control" required="required" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="company" id="company" class="form-control" required="required" placeholder="Company">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" id="email" class="form-control" required="required" placeholder="Email Id">
+                    </div>
                 </div>
-              </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
-          </div><!-- End Contact Form -->
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="form-group">
+                        <textarea name="message" id="message" required="required" class="form-control" rows="8" placeholder="Your text here"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button id="submit_btn" class="default-btn gray-btn"> Send <i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+                </form>
+            </div>
+		</div><!-- end container -->
+	</section>
+       <!-- End Contact Form -->
 
         </div>
 
@@ -158,7 +208,7 @@
     <div class="container">
       <div class="row gy-4">
         <div class="col-lg-5 col-md-12 footer-info">
-          <a href="index.php" class="logo d-flex align-items-center">
+          <a href="index.html" class="logo d-flex align-items-center">
             <span>CESDA</span>
           </a>
           <p>strengthen the role of higher education in the Sustainable Development Agenda.</p>
@@ -197,7 +247,16 @@
         </span></strong>. All Rights Reserved
       </div>
     </div>
-  </footer><
+    <div class="footer-content">
+      <div class="footer-image">
+        <img src="assets/img/cloud-computing.png" alt="">
+      </div>
+      <div class="footer-text">
+        Designed and managed by BK Consultancy. Connect with us on LinkedIn: 
+        <a href="www.linkedin.com/in/branham-karanja-15b02a25" target="_blank">LinkedIn Profile</a>
+      </div>
+    </div>
+  </footer>
   <!-- End Footer -->
 
   <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
@@ -214,6 +273,62 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- SCRIPTS -->
+	<script type="text/javascript" src="assets2/js/jquery-2.2.3.min.js"></script>
+	<script type="text/javascript" src="assets2/js/animated-headline.js"></script>
+	<script type="text/javascript" src="assets2/js/menu.js"></script>
+	<script type="text/javascript" src="assets2/js/modernizr.js"></script>
+	<script type="text/javascript" src="assets2/js/isotope.pkgd.min.js"></script>
+	<script type="text/javascript" src="assets2/js/jquery.flexslider-min.js"></script>
+	<script type="text/javascript" src="assets2/js/jquery.animsition.min.js"></script>
+	<script type="text/javascript" src="assets2/js/init.js"></script>
+	<script type="text/javascript" src="assets2/js/main.js"></script>
+	<script type="text/javascript" src="assets2/js/smooth-scroll.js"></script>
+	<script type="text/javascript" src="assets2/js/numscroller.js"></script>
+	<script type="text/javascript" src="assets2/js/wow.min.js"></script>
+	<script type="text/javascript" src="assets2/js/owl.carousel.min.js"></script>
+
+	<script type="text/javascript">
+		$(window).load(function() {
+			new WOW().init();
+
+			// initialise flexslider
+			$('.flexslider').flexslider({
+				animation: "fade",
+				directionNav: true,
+				controlNav: false,
+				keyboardNav: true,
+				slideToStart: 0,
+				animationLoop: true,
+				pauseOnHover: false,
+				slideshowSpeed: 4000,
+			});
+
+			smoothScroll.init();
+
+			// initialize isotope
+			var $container = $('.portfolio_container');
+			$container.isotope({
+				filter: '*',
+			});
+
+			$('.portfolio_filter a').click(function(){
+				$('.portfolio_filter .active').removeClass('active');
+				$(this).addClass('active');
+
+				var selector = $(this).attr('data-filter');
+				$container.isotope({
+					filter: selector,
+					animationOptions: {
+						duration: 500,
+						animationEngine : "jquery"
+					}
+				});
+				return false;
+			});
+		});
+	</script>
 
 </body>
 
