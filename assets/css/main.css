@@ -633,6 +633,10 @@ section {
   color: #0d0e0d;
   margin-bottom: 10px;
 }
+.justify-text {
+  text-align: justify;
+}
+
 
 
 
