@@ -587,54 +587,6 @@ ul.tags li a:hover{
 
 /*tab menu*/
 
-.tab{
-	overflow: hidden;
-	float: left;
-}
-
-.tab nav{
-	width: 100%;
-	display: inline-block;
-	float: left;
-	border-bottom: solid 2px #e6e6e6;
-	margin-bottom: 30px;
-	position: relative;
-}
-
-.tab nav .bottom-line{
-	height: 2px;
-	background-color: #7beec7;
-	position: absolute;
-	bottom: -2px;
-	left: 0;
-	-webkit-transition:all .2s ease-in-out;
-			transition:all .2s ease-in-out;
-}
-
-.tab nav a{
-	font-size: 12px;
-	font-weight: 700;
-	text-transform: uppercase;
-	padding: 0 10px 20px;
-	color:#999999;
-	display: inline-block;
-	-webkit-transition:all .2s ease-in-out;
-			transition:all .2s ease-in-out;
-	position: relative;
-}
-
-.tab nav a.current{
-	color:#60606e;
-}
-
-.tab .tab_single{
-	display: none;
-}
-
-.tab .tab_single.shown{
-	display: block;
-}
-
 
 /* --------------------------------
 
@@ -649,7 +601,7 @@ ul.tags li a:hover{
     left: 0;
     right: 0;
     display: block;
-    background: #fff;
+    background: #0e0d0d;
     z-index: 999999;
 }
 
@@ -723,7 +675,7 @@ ul.tags li a:hover{
 }
 
 .box-header.menu-is-open {
-    background-color: rgba(255, 255, 255, 0.96);
+    background-color: rgba(19, 17, 17, 0.96);
 }
 
 .box-logo {
@@ -912,19 +864,7 @@ ul.tags li a:hover{
 /* box-intro
 ==================================================*/
 
-.box-intro {
-    text-align: center;
-    display: table;
-    height: 100vh;
-    width: 100%;
-    background-image: url(../img/header.jpg);
-		background-attachment: fixed;
-    background-position: center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
+
 
 .bg-film:before {
     background: url(../img/dot.gif);
@@ -1194,193 +1134,6 @@ b i:last-child {
 
 /* #####  Footer  ##### */
 
-footer.main-footer{
-		background-color: #000;
-		z-index: 0;
-}
-
-footer p {
-    color: #777;
-}
-
-footer a {
-    color: #fff;
-    font-family: "Cantarell", "Times New Roman", sans-serif;
-}
-
-footer a:hover {
-    color: #000;
-    text-decoration: none;
-}
-
-.logo-footer{
-		margin-bottom: 30px;
-}
-
-.footer-widget h4 {
-		color: #777;
-		text-transform: uppercase;
-		margin-bottom: 30px;
-		font-size: 15px;
-		position: relative;
-		z-index: 2;
-}
-
-.contact-widget ul.social-icons li {
-    display: inline-block;
-    margin-right: 4px;
-    margin-bottom: 4px;
-}
-
-.contact-widget ul.social-icons li a i {
-    font-size: 15px;
-    width: 25px;
-    height: 30px;
-    color: #777;
-    display: block;
-    border-radius: 2px;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    -o-border-radius: 2px;
-    transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -webkit-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-}
-
-.contact-widget ul.social-icons li a:hover {
-    text-decoration: none;
-}
-
-.contact-widget ul.social-icons li a.facebook:hover i {
-   	color: #507CBE;
-}
-
-.contact-widget ul.social-icons li a.twitter:hover i {
-   	color: #63CDF1;
-}
-
-.contact-widget ul.social-icons li a.google:hover i {
-   	color: #F16261;
-}
-
-.contact-widget ul.social-icons li a.dribbble:hover i {
-   	color: #E46387;
-}
-
-.contact-widget ul.social-icons li a.linkdin:hover i {
-   	color: #90CADD;
-}
-
-.contact-widget ul.social-icons li a.tumblr:hover i {
-   	color: #4D7EA3;
-}
-
-.contact-widget ul.social-icons li a.flickr:hover i {
-   	color: #E474AF;
-}
-
-.contact-widget ul.social-icons li a.instgram:hover i {
-   	color: #4D4F54;
-}
-
-.contact-widget ul.social-icons li a.vimeo:hover i {
-   	color: #87D3E0;
-}
-
-.contact-widget ul.social-icons li a.skype:hover i {
-  	color: #36C4F3
-}
-
-.contact-widget span {
-   	font-weight: 900;
-}
-
-.contact-widget ul li {
-   	margin-bottom: 12px;
-}
-
-.contact-widget ul li p a {
-   	color: #777;
-}
-
-.contact-widget p {
-   padding-bottom: 20px;
-}
-
-.twitter-widget a:hover {
-   	color: #000;
-   	text-decoration: none;
-}
-
-.twitter-widget ul li {
-   	margin-bottom: 20px;
-}
-
-.twitter-widget ul li span {
-    color: #777;
-}
-
-.company-links a{
-	color: #777;
-}
-
-.company-links a:hover{
-	color: #ccc;
-}
-
-.copyright-section {
-    padding: 30px 0;
-    font-size: 15px;
-        border-top: 1px solid #131313;
-}
-
-.copyright-section p {
-    font-size: 15px;
-}
-
-
-@media (max-width: 992px) {
-	footer.main-footer *{
-		text-align: center;
-	}
-	footer.main-footer ul.social-icons{float: left;width: 100%;text-align: center;}
-	footer.main-footer nav.footer-nav ul li{
-		text-align: center;
-		width: 100%;
-	}
-	footer.main-footer nav.footer-nav ul li, footer.main-footer nav.footer-nav ul li:first-child{
-		margin-left:0;
-		margin-bottom: 20px;
-	}
-}
-
-
-@media only screen and (max-width: 480px){
-
-	footer.main-footer{
-		padding: 0;
-	}
-
-	footer.main-footer *{
-		text-align: left;
-	}
-}
-
-
-/* --------------------------------
-
-03.ABOUT US
-
--------------------------------- */
-.km-space {
-    height: 60px;
-}
-
-.about .bottom-right-separator{
-	bottom:-230px !important;
-
-}
 
 
 /* --------------------------------
@@ -2042,13 +1795,7 @@ footer a:hover {
 
 -------------------------------- */
 
-.site-hero_2 {
-    background: url("../img/site-hero2.jpg") no-repeat;
-    background-size: cover;
-    height: 600px;
-    width: 100%;
-    position: relative
-}
+
 
 .site-hero_2 .page-title {
     position: absolute;
@@ -2442,4 +2189,42 @@ ul.services-list li{
     font-size: 12px;
     letter-spacing: 1px;
     font-weight: 300;
+}
+.contact-info-box {
+  margin-top: 20px;
+}
+
+.contact-info-box i {
+  float: left;
+  font-size: 24px;
+  color: #ffb600;
+}
+
+.contact-info-box-content {
+  padding-left: 40px;
+}
+
+.contact-info-box-content h4 {
+  font-size: 16px;
+  margin-top: 0;
+  line-height: normal;
+  font-weight: 700;
+}
+
+.contact-info-box-content p {
+  margin-bottom: 0;
+}
+
+label {
+  font-weight: 400;
+}
+
+/* Contact page 2 */
+.ts-service-box.text-center .ts-service-icon.icon-squre i {
+  float: none;
+  margin-bottom: 20px;
+}
+
+.ts-service-box.text-center .ts-service-box-content {
+  margin: 0;
 }

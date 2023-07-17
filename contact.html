@@ -45,7 +45,7 @@
  <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-      <a href="index.php" class="logo d-flex align-items-center">
+      <a href="index.html" class="logo d-flex align-items-center">
         <img src="assets/img/Logo E.png" class="" alt="logo">
         <h1 class="font-monospace"></h1>
       </a>
@@ -145,9 +145,9 @@
                             <h4><span>Our mail and phone</span></h4>
                             <h3>Contacts</h3>
                             <p>
-                                <abbr title="Email">E:</abbr> mail@mail.com
+                                <abbr title="Email">Email:</abbr> director@cesdafrica.org
                                 <br>
-                                <abbr title="Phone">P:</abbr> 123-456-7890
+                                <abbr title="Phone">Phone:</abbr> (+254) 208703831
                             </p>
                         </div>
                     </div>
@@ -160,38 +160,69 @@
                             <h4><span>We work on the following</span></h4>
                             <h3>Schedule</h3>
                             <p>
-                                M-F: 8 AM - 4 PM<br>
-                                Sa: 8 AM - 12 PM<br>
-                                Su: Closed
+                                MONDAY-FRIDAY: 8 AM - 5 PM<br>
+                                SaT: CLOSED<br>
+                                Su:  CLOSED
                             </p>
                         </div>
                     </div>
                     <!--end contact info-->
                 </div>
             <!-- CONTACT FORM -->
-            <div class="contact-form bottom">
-                <form id="main-contact-form" name="contact-form" method="post" action="sendemail.php">
-                <div class="col-md-6 col-sm-6 col-xs-12">
-                    <div class="form-group">
-                        <input type="text" name="name" id="name" class="form-control" required="required" placeholder="Name">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" name="company" id="company" class="form-control" required="required" placeholder="Company">
-                    </div>
-                    <div class="form-group">
-                        <input type="email" name="email" id="email" class="form-control" required="required" placeholder="Email Id">
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-6 col-xs-12">
-                    <div class="form-group">
-                        <textarea name="message" id="message" required="required" class="form-control" rows="8" placeholder="Your text here"></textarea>
-                    </div>
-                    <div class="form-group">
-                        <button id="submit_btn" class="default-btn gray-btn"> Send <i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
-                    </div>
-                </div>
-                </form>
-            </div>
+            <style>
+              form {
+                max-width: 600px;
+                margin: 0 auto;
+              }
+            
+              label {
+                display: block;
+                margin-bottom: 10px;
+                color: #696363;
+                font-weight: bold;
+              }
+            
+              input[type="email"],
+              textarea {
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+              }
+            
+              button[type="submit"] {
+                padding: 10px 20px;
+                border: none;
+                background-color: #333;
+                color: #fff;
+                font-size: 16px;
+                border-radius: 4px;
+                cursor: pointer;
+              }
+            
+              button[type="submit"]:hover {
+                background-color: #00aa00;
+              }
+            </style>
+            
+            <form action="https://formspree.io/f/mzblzpyy" method="POST">
+              <label>
+                Your email:
+                <input type="email" name="email">
+              </label>
+              <label>
+                Subject:
+                <input type="text" name="subject">
+              </label>
+              <label>
+                Your message:
+                <textarea name="message"></textarea>
+              </label>
+              <!-- your other form fields go here -->
+              <button type="submit">Send</button>
+            </form>
+            
+            
 		</div><!-- end container -->
 	</section>
        <!-- End Contact Form -->
@@ -205,23 +236,27 @@
 
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
+
     <div class="container">
       <div class="row gy-4">
         <div class="col-lg-5 col-md-12 footer-info">
           <a href="index.html" class="logo d-flex align-items-center">
             <span>CESDA</span>
           </a>
-          <p>strengthen the role of higher education in the Sustainable Development Agenda.</p>
+          <ul>
+          <p>Kenyatta University</p>
+          <p>School of Education and Lifelong Learning Building<br>Room 225</p>
           <div class="social-links d-flex mt-4">
-            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="linkedin"><i class="bi bi-youtube"></i></a>
+            <a href="#" class="facebook"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
           </div>
+        </ul>
         </div>
 
         <div class="col-lg-2 col-6 footer-links">
           <h4>Useful Links</h4>
           <ul>
-            <li><a href="#">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="#about">About us</a></li>
             <li><a href="#service">Services</a></li>
             <li><a href="#features">Features</a></li>
@@ -233,29 +268,23 @@
           <p>
             Nairobi, <br>
             Kenya <br><br>
-            <strong>Phone:</strong> +254700 000 000<br>
-            <strong>Email:</strong> @gmail.com<br>
+            <strong>Phone:</strong>  (+254) 208703831<br>
+            <strong>Email:</strong> director@cesdafrica.org<br>
           </p>
 
         </div>
 
       </div>
     </div>
+
     <div class="container mt-4">
       <div class="copyright">
         &copy; Copyright <strong><span>CESDA - 2023
         </span></strong>. All Rights Reserved
       </div>
     </div>
-    <div class="footer-content">
-      <div class="footer-image">
-        <img src="assets/img/cloud-computing.png" alt="">
-      </div>
-      <div class="footer-text">
-        Designed and managed by BK Consultancy. Connect with us on LinkedIn: 
-        <a href="www.linkedin.com/in/branham-karanja-15b02a25" target="_blank">LinkedIn Profile</a>
-      </div>
-    </div>
+   
+
   </footer>
   <!-- End Footer -->
 
