@@ -89,6 +89,14 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         scrollto(this.hash);
       }
+      // JavaScript to handle mobile navigation toggle
+const toggleButton = document.querySelector('.mobile-nav-toggle-btn');
+const mobileNav = document.querySelector('.mobile-nav');
+
+toggleButton.addEventListener('click', () => {
+  mobileNav.classList.toggle('active');
+});
+
     }));
   
     /**

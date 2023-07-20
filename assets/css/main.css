@@ -302,6 +302,16 @@ section {
     transition-delay: 0 !important;
   }
 }
+/* Hide the mobile menu by default */
+.mobile-nav {
+  display: none;
+}
+
+/* Show the mobile menu when the toggle button is clicked */
+.mobile-nav.active {
+  display: block;
+}
+
 
 /*--------------------------------------------------------------
 # Header
