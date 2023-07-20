@@ -2093,22 +2093,29 @@ footer {
 }
 /* Your existing CSS styles for the header and other elements */
 
-/* Show the mobile navigation toggle icon by default */
+/* Hide the mobile navigation toggle icon by default for larger screens */
 .mobile-nav-toggle {
-  display: block;
-}
-
-/* Hide the "x" icon (close icon) by default */
-.mobile-nav-toggle.bi-x {
   display: none;
 }
 
-/* Hide the desktop navigation */
-.navbar {
-  display: none;
-}
+/* Show the mobile navigation toggle icon on smaller screens */
+@media screen and (max-width: 767px) {
+  .mobile-nav-toggle {
+    display: block;
+  }
 
-/* Show the mobile navigation when the toggle icon is active */
-.navbar.active {
-  display: block;
+  /* Hide the "x" icon (close icon) by default */
+  .mobile-nav-toggle.bi-x {
+    display: none;
+  }
+
+  /* Hide the desktop navigation */
+  .navbar {
+    display: none;
+  }
+
+  /* Show the mobile navigation when the toggle icon is active */
+  .navbar.active {
+    display: block;
+  }
 }
