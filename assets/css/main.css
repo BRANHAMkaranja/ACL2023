@@ -2138,3 +2138,9 @@ header {
   max-width: 100%; /* Set the maximum width of the image to 100% of its natural size */
 }
 
+/* CSS for the header */
+header.header-image {
+  width: 100%; /* Set the header element to take 100% width of its parent */
+  height: 200px; /* Set the height of the header, adjust as needed */
+  background-color: #214134; /* Replace with your desired background color */
+}
