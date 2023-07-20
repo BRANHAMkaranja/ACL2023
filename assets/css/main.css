@@ -2122,4 +2122,19 @@ footer {
 }
 
 /* CSS for the header */
+/* CSS for the header */
+header {
+  width: 100%; /* Set the header element to take 100% width of its parent */
+  overflow: hidden; /* Hide any overflowing content (optional) */
+  text-align: center; /* Center the image horizontally (optional) */
+  position: relative; /* Ensure the header maintains its aspect ratio */
+}
+
+/* CSS for the header image */
+.header-image {
+  width: 100%; /* Set the image to take 100% width of its parent (the header) */
+  height: auto; /* Allow the image to scale proportionally */
+  display: block; /* Ensures that any spacing around the image is removed */
+  max-width: 100%; /* Set the maximum width of the image to 100% of its natural size */
+}
 
