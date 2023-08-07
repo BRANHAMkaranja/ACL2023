@@ -59,13 +59,13 @@ h6 {
 # Sections & Section Header
 --------------------------------------------------------------*/
 section {
-  padding: 80px 0;
+  padding: 50px 0;
   overflow: hidden;
 }
 
 .section-header {
   text-align: center;
-  padding: 30px 0;
+  padding: 3px 0;
   position: relative;
 }
 
@@ -125,17 +125,12 @@ section {
     font-size: 38px;
   }
 }
-.navbar li:hover a {
-  color: #ff0000; /* Change the color as desired */
-}
-
-
 
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
 .breadcrumbs .page-header {
-  padding: 140px 0 80px 0;
+  padding: 100px 0 50px 0;
   position: relative;
   background-size: cover;
   background-position: center;
@@ -144,7 +139,7 @@ section {
 
 .breadcrumbs .page-header:before {
   content: "";
-  background-color: rgba(153, 176, 9, 0.47);
+  background-color: rgba(131, 144, 49, 0);
   position: absolute;
   inset: 0;
 }
@@ -152,12 +147,12 @@ section {
 .breadcrumbs .page-header h2 {
   font-size: 56px;
   font-weight: 500;
-  color: #293030;
+  color: #e6aa06;
   font-family: var(--font-secondary);
 }
 
 .breadcrumbs .page-header p {
-  color: rgba(33, 3, 3, 0.8);
+  color: rgba(3, 3, 3, 0.8);
 }
 
 .breadcrumbs nav {
@@ -303,7 +298,6 @@ section {
   }
 }
 
-
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -332,7 +326,6 @@ section {
   font-family: var(--font-primary);
 }
 
-
 /*--------------------------------------------------------------
 # Desktop Navigation
 --------------------------------------------------------------*/
@@ -360,16 +353,16 @@ section {
     justify-content: space-between;
     padding: 10px 0 10px 30px;
     font-family: var(--font-primary);
-    font-size: 20px;
-    font-weight: 800;
-    color: #f7d307;
+    font-size: 16px;
+    font-weight: 600;
+    color: #eac406;
     white-space: nowrap;
     transition: 0.3s;
   }
 
   .navbar a i,
   .navbar a:focus i {
-    font-size: 12px;
+    font-size: 16px;
     line-height: 0;
     margin-left: 5px;
   }
@@ -490,9 +483,9 @@ section {
   .navbar ul {
     position: absolute;
     inset: 0;
-    padding: 50px 0 10px 0;
+    padding: 10px 0 10px 0;
     margin: 0;
-    background: rgba(14, 29, 52, 0.9);
+    background: rgba(189, 154, 38, 0.861);
     overflow-y: auto;
     transition: 0.3s;
     z-index: 9998;
@@ -503,7 +496,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 12px 20px;
+    padding: 5px 5px;
     font-family: var(--font-primary);
     font-size: 16px;
     font-weight: 500;
@@ -546,7 +539,7 @@ section {
     position: static;
     display: none;
     padding: 10px 0;
-    margin: 10px 20px;
+    margin: 10px 5px;
     transition: all 0.5s ease-in-out;
     border: 1px solid #19335c;
   }
@@ -590,7 +583,7 @@ section {
     content: "";
     position: fixed;
     inset: 0;
-    background: rgba(14, 29, 52, 0.8);
+    background: rgba(0, 0, 0, 0);
     z-index: 9996;
   }
 }
@@ -609,7 +602,7 @@ section {
 }
 
 .featured-services .service-item .icon i {
-  color: #51890d;
+  color: #000000;
   font-size: 48px;
   transition: 0.3s;
 }
@@ -626,19 +619,15 @@ section {
   font-weight: 700;
   margin-bottom: 10px;
   font-size: 20px;
-  color: #51890d;
+  color: #010101;
   transition: 0.3s;
 }
 
 .featured-services .service-item .description {
   font-size: 15px;
-  color: #0d0e0d;
+  color: #000000;
   margin-bottom: 10px;
 }
-.justify-text {
-  text-align: justify;
-}
-
 
 
 
@@ -1844,16 +1833,28 @@ section {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-.small-image {
-  width: 20px;
-  height: auto; /* Automatically adjusts the height while maintaining aspect ratio */
+.hero {
+  width: 100%;
+  min-height: 10vh;
+  position: relative;
+  padding: 1px 0 1px 0;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.hero video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
 }
 
 
 
-
 .hero h2 {
-  margin-bottom: 1px;
+  margin-bottom: 20px;
   padding: 0;
   font-size: 30px;
   font-weight: 700;
@@ -2052,95 +2053,14 @@ section {
 .footer .credits a {
   color: #fff;
 }
-/* Footer maintained by */
-footer {
-  background-color: #f0f0f0;
-  padding: 20px;
-  text-align: center;
-}
 
-.footer-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer-image img {
-  width: 35px;
-  height: 50px;
-  border-radius: 25%;
-  object-fit: cover;
-}
-
-.footer-text {
-  margin-left: 10px;
-  font-size: 14px;
-}
-
-.circle {
-  width: 200px; /* adjust size as needed */
-  height: 200px; /* adjust size as needed */
-  border-radius: 50%;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.circle img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: cover;
-}
-/* Your existing CSS styles for the header and other elements */
-
-/* Hide the mobile navigation toggle icon by default for larger screens */
-.mobile-nav-toggle {
-  display: none;
-}
-
-/* Show the mobile navigation toggle icon on smaller screens */
-@media screen and (max-width: 767px) {
-  .mobile-nav-toggle {
-    display: block;
-  }
-
-  /* Hide the "x" icon (close icon) by default */
-  .mobile-nav-toggle.bi-x {
-    display: none;
-  }
-
-  /* Hide the desktop navigation */
-  .navbar {
-    display: none;
-  }
-
-  /* Show the mobile navigation when the toggle icon is active */
-  .navbar.active {
-    display: block;
-  }
-}
-
-/* CSS for the header */
-/* CSS for the header */
-header {
-  width: 100%; /* Set the header element to take 100% width of its parent */
-  overflow: hidden; /* Hide any overflowing content (optional) */
-  text-align: center; /* Center the image horizontally (optional) */
-  position: relative; /* Ensure the header maintains its aspect ratio */
-}
-
-/* CSS for the header image */
-.header-image {
-  width: 100%; /* Set the image to take 100% width of its parent (the header) */
-  height: auto; /* Allow the image to scale proportionally */
-  display: block; /* Ensures that any spacing around the image is removed */
-  max-width: 100%; /* Set the maximum width of the image to 100% of its natural size */
-}
-
-/* CSS for the header */
 header.header-image {
   width: 100%; /* Set the header element to take 100% width of its parent */
-  height: 200px; /* Set the height of the header, adjust as needed */
-  background-color: #214134; /* Replace with your desired background color */
+  height: 150px; /* Set the height of the header, adjust as needed */
+  background-color: #21582a; /* Replace with your desired background color */
+}
+header.header-NELLY {
+  width: 100%; /* Set the header element to take 100% width of its parent */
+  height: 150px; /* Set the height of the header, adjust as needed */
+  background-color: #2c4030; /* Replace with your desired background color */
 }

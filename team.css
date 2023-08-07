@@ -1,0 +1,44 @@
+/* bio_styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .bio-container {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    background-color: #f5f5f5;
+  }
+  
+  .bio-image img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .bio-content {
+    flex: 2;
+    padding: 10px;
+    background-color: #ffffff; /* Background color for the content container */
+  }
+  
+  .bio-content h2 {
+    margin-top: 0;
+  }
+  
+  .social-icons {
+    margin-top: 20px;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  /* Add more styling as needed */
+  .col-lg-6 {
+    position: relative;
+  }

@@ -52,17 +52,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     window.addEventListener('load', navbarlinksActive);
     document.addEventListener('scroll', navbarlinksActive);
-    // JavaScript to handle mobile navigation toggle
-    const toggleButtons = document.querySelectorAll('.mobile-nav-toggle');
-    const mobileNav = document.querySelector('.navbar');
-
-    toggleButtons.forEach(button => {
-      button.addEventListener('click', () => {
-        mobileNav.classList.toggle('active');
-        toggleButtons.forEach(btn => btn.classList.toggle('d-none'));
-      });
-    });
-
   
     /**
      * Function to scroll to an element with top ofset
